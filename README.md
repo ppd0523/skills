@@ -1,18 +1,29 @@
-# myskills
+# skills
 
-Personal skills packaged for Codex and Claude Code. Add skill folders under `plugins/myskills/skills/`; the repository currently contains only a starter template.
+Skills for Codex and Claude Code. Add skill folders under `skills/`; the repository currently contains the `git-commit` skill and a starter template.
 
 ## Install
+
+Codex:
+
+```sh
+codex plugin marketplace add ppd0523/skills
+codex plugin add skills@skills
+```
+
+Install a skill with npx:
+
+```sh
+npx skills@latest add ppd0523/skills --skill git-commit
+```
 
 Claude Code:
 
 ```sh
-claude plugin marketplace add .
-claude plugin install myskills@myskills
+claude plugin marketplace add ppd0523/skills
+claude plugin install skills@skills
 ```
-
-Codex: add this repository as a plugin marketplace with `codex plugin marketplace add .`, then enable `myskills` from the Plugins directory.
 
 ## Add a skill
 
-Copy `plugins/myskills/templates/SKILL.md` to `plugins/myskills/skills/<skill-name>/SKILL.md` and fill it in. Keep platform-specific configuration alongside the skill only when needed.
+Copy `templates/SKILL.md` to `skills/<skill-name>/SKILL.md` and fill it in. Keep platform-specific configuration alongside the skill only when needed.
