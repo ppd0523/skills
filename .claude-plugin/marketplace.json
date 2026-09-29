@@ -1,0 +1,14 @@
+{
+  "name": "myskills",
+  "description": "Personal collection of reusable skills.",
+  "owner": {
+    "name": "myskills"
+  },
+  "plugins": [
+    {
+      "name": "myskills",
+      "source": "./plugins/myskills",
+      "description": "Reusable skills for Codex and Claude Code."
+    }
+  ]
+}
