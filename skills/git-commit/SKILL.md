@@ -26,6 +26,16 @@ Use the Conventional Commits form:
 <type>[optional scope][!]: <short description>
 ```
 
-Choose a type that matches the group, commonly `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, or `revert`. Keep the subject specific to that commit. Add a body only when it explains useful context, and use a `BREAKING CHANGE:` footer for a breaking change.
+Choose a type that matches the group, commonly `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, or `revert`. Keep the subject specific to that commit. Use a `BREAKING CHANGE:` footer for a breaking change.
+
+Write the body as a list, one `* ` item per change, never as narrative paragraphs. Keep each item short: one line, what changed (and why only when it is not obvious). Skip the body when the subject already says everything.
+
+```text
+feat(viewer): 타임라인을 새 창으로 띄우기
+
+* 타임라인 막대에 새 창 버튼 추가
+* 팝업과 메인 창이 같은 app 상태 공유
+* 팝업을 닫으면 메인 창으로 복귀
+```
 
 Write the subject and any body in Korean. Keep Conventional Commit type names and optional scopes in English.
